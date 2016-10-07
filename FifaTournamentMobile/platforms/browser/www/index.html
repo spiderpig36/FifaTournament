@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="js/jquery-1.5.0.mobile.min.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"
+	id="cordova-jquery"></script>
+<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+
+<body>
+	<div data-role="page" id="table">
+		<div data-role="header">
+			<h1>Fifa Tournament</h1>
+			<a style="float:right" href="#newMatch" class="ui-btn">New</a>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#table">Tabelle</a></li>
+				<li><a href="#spieler">Spieler</a></li>
+				<li><a href="#teams">Teams</a></li>
+			</ul>
+		</div>
+		<div data-role="main" class="ui-content">
+			<table class="table_playerStats" id="tblPlayerStats">
+				<tr>
+					<th>Name</th>
+					<th>Games</th>
+					<th>Wins</th>
+					<th>Defeats</th>
+					<th>Ties</th>
+				</tr>
+			</table>
+		</div>
+		<div data-role="footer">
+			<h1>#inovations</h1>
+		</div>
+	</div>
+
+	<div data-role="page" data-dialog="true" id="newMatch">
+		<div data-role="main" class="ui-content">
+		</div>
+	</div>
+
+	<div data-role="page" id="spieler">
+		<div data-role="header">
+			<h1>Fifa Tournament</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#table">Tabelle</a></li>
+				<li><a href="#spieler">Spieler</a></li>
+				<li><a href="#teams">Teams</a></li>
+			</ul>
+		</div>
+		<div data-role="main" class="ui-content">
+			<ol data-role="listview" id="lstPlayers">
+			</ol>
+		</div>
+		<div data-role="footer">
+			<h1>#inovations</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="teams">
+		<div data-role="header">
+			<h1>Fifa Tournament</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#table">Tabelle</a></li>
+				<li><a href="#spieler">Spieler</a></li>
+				<li><a href="#teams">Teams</a></li>
+			</ul>
+		</div>
+		<div data-role="main" class="ui-content">
+		<div data-role="main" class="ui-content">
+			<ol data-role="listview" id="lstTeams">
+			</ol>
+		</div>
+		</div>
+		<div data-role="footer">
+			<h1>#inovations</h1>
+		</div>
+	</div>
+</body>
+</html>
